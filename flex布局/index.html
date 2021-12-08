@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <link rel="icon" href="../images/star_02.jpeg">
+    <style type="text/css">
+        div{
+            display: flex;/*flex布局*/
+        }
+        .date{
+            font-size: 30px;
+            width: 70px;
+            /*三行代码实现水平垂直居中*/
+            flex-direction: column;/*主轴方向,垂直*/
+            justify-content: center;/*主轴对齐方式,居中对齐*/
+            text-align: center;
+        }
+        .new{
+            font-size: 18px;
+            /*width: 200px;*/
+            /*两行代码实现置顶置底*/
+            flex-direction: column;/*主轴方向,垂直*/
+            justify-content: space-between;/*两端对齐方式*/
+        }
+        .date1{
+            font-size: 30px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .new1{
+            font-size: 18px;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="date">
+        <span>31</span>
+        <span>八月</span>
+    </div>
+    <div class="new">
+        <span>娱乐新闻</span>
+        <span>明天将迎来期待已久的一天,1096天前</span>
+    </div>
+</div>
+<div class="box1">
+    <div class="date1">
+        <span>06</span>
+        <span>04</span>
+    </div>
+    <div class="new1">
+        <span>三周年</span>
+        <span>期待已久的三周年</span>
+    </div>
+</div>
+<div>
+    <audio src="../images/陈立农%20-%20年少无邪.mp3" controls loop autoplay></audio>
+</div>
+<div>
+    <video width="640" height="400" controls="controls">
+        <source src="02-Javascript基础-语法和注释.mp4" type="video/mp4">
+    </video>
+</div>
+</body>
+</html>
